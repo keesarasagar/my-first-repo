@@ -7,8 +7,10 @@ pipeline {
     stages {
       stage("Test code"){
         steps{
+dir('my_pipeline_SCM'){
         sh 'mvn test'
     }
+}
     }
     stage("Build artifact"){
         steps{
