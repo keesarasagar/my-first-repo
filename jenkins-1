@@ -13,13 +13,5 @@ dir('my_pipeline_SCM'){
 }
     }
 }
-    stage("Build artifact"){
-        steps{
-dir('my_pipeline_SCM'){
-            sh 'mvn package'
-        
-        }
-    }
-    }
     
 }
